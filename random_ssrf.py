@@ -20,6 +20,7 @@ def main():
             collab = str(ran)+'.'+collaborator
             target_headers = {"X-Forwarded-For": collab}
             r = requests.get(makeup, headers=target_headers)
+            print(r.status_code)
             print (r.headers)
         except Exception as error:
             print ("something went wrong")
