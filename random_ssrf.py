@@ -21,7 +21,7 @@ def main():
             collab = str(ran)+'.'+collaborator
             for headerz in list:
                 target_headers = {headerz: collab}
-                r = requests.get(makeup, headers=target_headers)
+                r = requests.get(makeup, headers=target_headers, timeout=None, verify=False)
                 with open("vulnerable.txt", "w") as f:
                     f.write(target)
                     f.close
