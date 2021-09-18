@@ -1,4 +1,4 @@
-# Header Abuse SSRF and AC bypass
+# Header Abuse external/internal SSRF and AC bypass.
 
 This is totally random - This script does quick check for the external ssrf using multiple headers , you can also abuse this to send thousands of requests against random servers in the infra either external or internal (depends) as well as AC bypasses.
 
